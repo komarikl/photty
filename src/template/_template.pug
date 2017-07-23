@@ -24,6 +24,9 @@ html
 
   body
     .wrapper
+      .back-rectangle
+        svg(width='3000' height='3000')
+          rect.rectangle(x='0' y='0' width='3000' height='3000')
       include common/_header.pug
       block content
       include common/_footer.pug

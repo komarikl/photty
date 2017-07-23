@@ -3,11 +3,13 @@ extends ../_template
 block content
     main.main
         .main__left
-            .back-rectangle
-                svg(width='1000' height='1000')
-                    rect.rectangle(x='0' y='0' width='1000' height='1000')
-            .hand
-                include ../common/_svg.pug
+            .hand-wrapper
+                img.hand-left(src='./assets/img/hand.png')
+                img.finger(src='./assets/img/finger.png')
+                img.hand-right(src='./assets/img/hand2.png')
+                .slider
+                    img.slider-pic(src='#')
+                //include ../common/_svg.pug
         .main__right
             .about
                 .about__slogan around the world
